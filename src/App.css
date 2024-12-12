@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 255, 136, 0.25);
+  color: #e0e0e0;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-weight: bold;
+  color: #00ff88;
+  margin-bottom: 8px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 12px;
+  background: #2b2b2b;
+  color: #e0e0e0;
+  border: 2px solid #00ff88;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #00ff88;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}
+
+button {
+  background: linear-gradient(45deg, #00ff88, #00ccff);
+  color: #121212;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #00ccff, #00ff88);
+}
+
+/* Response Styles */
+.response {
+  margin-top: 20px;
+  padding: 20px;
+  background: #2b2b2b;
+  border-radius: 12px;
+  border: 2px solid #00ff88;
+  font-size: 14px;
+  overflow-x: auto;
+  white-space: pre-wrap; /* Enables word wrapping for long strings */
+  word-wrap: break-word; /* Wraps long words without spaces */
+  max-height: 400px; /* Adds vertical scrolling for very large responses */
+  overflow-y: auto;
+}
+
+.response h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #00ff88;
+}
+
+@media (max-width: 600px) {
+  .App {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
